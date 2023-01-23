@@ -10,6 +10,20 @@
   <link rel="apple-touch-icon" href="images/logo.png" />
   <meta name="google-site-verification" content="s3hE2D_rJuuUUj4rVvWBADMHqHqiSM-bQh80mnwzDMA" />
 </head>
+<style>
+  .left {
+    float: left;
+    width: 150px;
+  }
+
+  .right {
+    margin-left: 150px;
+  }
+
+  p {
+    margin: 0 0 10px 0;
+  }
+</style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7X9DPS593M"></script>
 <script>
@@ -42,84 +56,93 @@
             <p class="lang" key="L5EHint"></p>
           </header>
           <!-- RB UB UL UR RL -->
-          <p>
-            <strong>RB &rArr;</strong>
-            <select style="width:3em" id="pyinput1" onchange="algSearch()">
-              <option></option>
-              <option>UR</option>
-              <option>UL</option>
-              <option>UB</option>
-              <option>RU</option>
-              <option>RL</option>
-              <option>RB</option>
-              <option>LU</option>
-              <option>LR</option>
-              <option>BU</option>
-              <option>BR</option>
-            </select>
-            <br />
-            <strong>UB &rArr;</strong>
-            <select style="width:3em" id="pyinput2" onchange="algSearch()">
-              <option></option>
-              <option>UR</option>
-              <option>UL</option>
-              <option>UB</option>
-              <option>RU</option>
-              <option>RL</option>
-              <option>RB</option>
-              <option>LU</option>
-              <option>LR</option>
-              <option>BU</option>
-              <option>BR</option>
-            </select>
-            <br />
-            <strong>UL &rArr;</strong>
-            <select style="width:3em" id="pyinput3" onchange="algSearch()">
-              <option></option>
-              <option>UR</option>
-              <option>UL</option>
-              <option>UB</option>
-              <option>RU</option>
-              <option>RL</option>
-              <option>RB</option>
-              <option>LU</option>
-              <option>LR</option>
-              <option>BU</option>
-              <option>BR</option>
-            </select>
-            <br />
-            <strong>UR &rArr;</strong>
-            <select style="width:3em" id="pyinput4" onchange="algSearch()">
-              <option></option>
-              <option>UR</option>
-              <option>UL</option>
-              <option>UB</option>
-              <option>RU</option>
-              <option>RL</option>
-              <option>RB</option>
-              <option>LU</option>
-              <option>LR</option>
-              <option>BU</option>
-              <option>BR</option>
-            </select>
-            <br />
-            <strong>RL &rArr;</strong>
-            <select style="width:3em" id="pyinput5" onchange="algSearch()">
-              <option></option>
-              <option>UR</option>
-              <option>UL</option>
-              <option>UB</option>
-              <option>RU</option>
-              <option>RL</option>
-              <option>RB</option>
-              <option>LU</option>
-              <option>LR</option>
-              <option>BU</option>
-              <option>BR</option>
-            </select>
-          </p>
-          <twisty-player id="tw" puzzle="pyraminx" alg="" experimental-setup-anchor="end" hint-facelets="none"
-            control-panel="none" back-view="none" background="none"></twisty-player>
+          <div class="left">
+            <p>
+              <strong>RB &rArr;</strong>
+              <select style="width:3em" id="pyinput1" onchange="algSearch()">
+                <option></option>
+                <option>UR</option>
+                <option>UL</option>
+                <option>UB</option>
+                <option>RU</option>
+                <option>RL</option>
+                <option>RB</option>
+                <option>LU</option>
+                <option>LR</option>
+                <option>BU</option>
+                <option>BR</option>
+              </select>
+            </p>
+            <p>
+              <strong>UB &rArr;</strong>
+              <select style="width:3em" id="pyinput2" onchange="algSearch()">
+                <option></option>
+                <option>UR</option>
+                <option>UL</option>
+                <option>UB</option>
+                <option>RU</option>
+                <option>RL</option>
+                <option>RB</option>
+                <option>LU</option>
+                <option>LR</option>
+                <option>BU</option>
+                <option>BR</option>
+              </select>
+            </p>
+            <p>
+              <strong>UL &rArr;</strong>
+              <select style="width:3em" id="pyinput3" onchange="algSearch()">
+                <option></option>
+                <option>UR</option>
+                <option>UL</option>
+                <option>UB</option>
+                <option>RU</option>
+                <option>RL</option>
+                <option>RB</option>
+                <option>LU</option>
+                <option>LR</option>
+                <option>BU</option>
+                <option>BR</option>
+              </select>
+            </p>
+            <p>
+              <strong>UR &rArr;</strong>
+              <select style="width:3em" id="pyinput4" onchange="algSearch()">
+                <option></option>
+                <option>UR</option>
+                <option>UL</option>
+                <option>UB</option>
+                <option>RU</option>
+                <option>RL</option>
+                <option>RB</option>
+                <option>LU</option>
+                <option>LR</option>
+                <option>BU</option>
+                <option>BR</option>
+              </select>
+            </p>
+            <p>
+              <strong>RL &rArr;</strong>
+              <select style="width:3em" id="pyinput5" onchange="algSearch()">
+                <option></option>
+                <option>UR</option>
+                <option>UL</option>
+                <option>UB</option>
+                <option>RU</option>
+                <option>RL</option>
+                <option>RB</option>
+                <option>LU</option>
+                <option>LR</option>
+                <option>BU</option>
+                <option>BR</option>
+              </select>
+            </p>
+          </div>
+          <div class="right">
+            <twisty-player id="tw" style="width: 220px; height: 240px;" puzzle="pyraminx" alg=""
+              experimental-setup-anchor="end" hint-facelets="none" control-panel="none" back-view="none"
+              background="none"></twisty-player>
+          </div>
           <div id="div1">
           </div>
           <br />
