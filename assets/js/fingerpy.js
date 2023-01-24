@@ -14,13 +14,18 @@ function finger(s1, positionr, positionl) {
         if (arr[i] === "R'") {
             fingerrposition = fingerrposition - 1;
         }
-        if (arr[i] === "R2" || arr[i] === "R2'") {
+        if (arr[i] === "R2") {
+            if (fingerrposition === 1) {
+                fingerrposition = 3;
+            } else {
+                return 0;
+            }
+        }
+        if (arr[i] === "R2'") {
             if (fingerrposition === 3) {
                 fingerrposition = 1;
-            } else if (fingerrposition === 2) {
+            } else {
                 return 0;
-            } else if (fingerrposition === 1) {
-                fingerrposition = 3;
             }
         }
         if (fingerrposition === 4 || fingerrposition === 0) {
@@ -32,13 +37,18 @@ function finger(s1, positionr, positionl) {
         if (arr[i] === "L") {
             fingerlposition = fingerlposition - 1;
         }
-        if (arr[i] === "L2" || arr[i] === "L2'") {
+        if (arr[i] === "L2'") {
+            if (fingerlposition === 1) {
+                fingerlposition = 3;
+            } else {
+                return 0;
+            }
+        }
+        if (arr[i] === "L2") {
             if (fingerlposition === 3) {
                 fingerlposition = 1;
-            } else if (fingerlposition === 2) {
+            } else {
                 return 0;
-            } else if (fingerlposition === 1) {
-                fingerlposition = 3;
             }
         }
         if (fingerlposition === 4 || fingerlposition === 0) {
