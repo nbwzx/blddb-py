@@ -1,23 +1,25 @@
 const arrLang = {
     "en": {
-        "L5E": "Last 5 Edges (L5E)",
+        "L5E": "Last 6 Edges (L6E)",
         "L5EHint": "Enter the position that these edges need to go to.",
         "thumbup": "Thumb up",
         "thumbdown": "Thumb down",
         "homegrip": "Home grip",
         "no": "No.",
+        "image": "Image",
         "algorithm": "Algorithm",
         "commutator": "Commutator",
         "rightThumbPosition": "Right Thumb Position",
         "leftThumbPosition": "Left Thumb Position"
     },
     "zh": {
-        "L5E": "五棱 (L5E)",
+        "L5E": "六棱 (L6E)",
         "L5EHint": "请选择这些位置上的棱块要去哪里。",
         "thumbup": "上",
         "thumbdown": "下",
         "homegrip": "中",
         "no": "序号",
+        "image": "图片",
         "algorithm": "公式",
         "commutator": "交换子",
         "rightThumbPosition": "右起手",
@@ -33,22 +35,8 @@ if (!Object.keys(arrLang).includes(lang)) {
 }
 if (lang === "zh") {
     $(".language").html("<div class=\"status_circle status_circle_online\">简体中文</div>");
-    $("#introduction").attr("href", "https://docs.blddb.net/zh");
-    $("#nightmareIntroduction").attr("href", "https://docs.blddb.net/zh/#nightmare");
-    $("#donate").attr("href", "donate.html");
-    $("#codeinput").width("5.5em");
-    $("#cornerstyle").width("5em");
-    $("#edgemode").width("4em");
-    $("#image").show();
 } else if (lang === "en") {
     $(".language").html("<div class=\"status_circle status_circle_hide\">English</div>");
-    $("#introduction").attr("href", "https://docs.blddb.net/en");
-    $("#nightmareIntroduction").attr("href", "https://docs.blddb.net/en/#nightmare");
-    $("#donate").attr("href", "donate_en.html");
-    $("#codeinput").width("14em");
-    $("#cornerstyle").width("7em");
-    $("#edgemode").width("6em");
-    $("#image").hide();
 }
 
 $(document).ready(() => {

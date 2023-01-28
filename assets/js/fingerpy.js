@@ -51,6 +51,23 @@ function finger(s1, positionr, positionl) {
                 return 0;
             }
         }
+        if (arr[i][0] === "B") {
+            if (i !== 0 && i !== arr.length - 1) {
+                if (arr[i - 1][0] === "U" && arr[i + 1][0] === "U") {
+                    return 0;
+                }
+                if (fingerlposition === 1 && fingerrposition === 1) {
+                    return 0;
+                }
+            }
+        }
+        if (arr[i][0] === "U") {
+            if (i !== 0 && i !== arr.length - 1) {
+                if (arr[i - 1][0] === "B" && arr[i + 1][0] === "B") {
+                    return 0;
+                }
+            }
+        }
         if (fingerlposition === 4 || fingerlposition === 0) {
             return 0;
         }
@@ -88,14 +105,14 @@ function fingerlbeginfrom(s1) {
     }
     if (finger(s1, 2, 2) === 1) {
         return arrLang[lang]["homegrip"];
-    } else if (finger(s1, 1, 2) === 1) {
-        return arrLang[lang]["homegrip"];
-    } else if (finger(s1, 3, 2) === 1) {
-        return arrLang[lang]["homegrip"];
     } else if (finger(s1, 2, 1) === 1) {
         return arrLang[lang]["thumbdown"];
     } else if (finger(s1, 2, 3) === 1) {
         return arrLang[lang]["thumbup"];
+    } else if (finger(s1, 1, 2) === 1) {
+        return arrLang[lang]["homegrip"];
+    } else if (finger(s1, 3, 2) === 1) {
+        return arrLang[lang]["homegrip"];
     }
     return "";
 }

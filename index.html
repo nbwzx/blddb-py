@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title class="lang" key="L5E">L5E</title>
+  <title class="lang" key="L6E"></title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
   <link rel="stylesheet" href="assets/css/main.css" />
@@ -11,21 +11,20 @@
   <meta name="google-site-verification" content="s3hE2D_rJuuUUj4rVvWBADMHqHqiSM-bQh80mnwzDMA" />
 </head>
 <style>
-  .left {
-    float: left;
-    width: 150px;
-  }
-
-  .right {
-    margin-left: 150px;
-  }
-
   p {
     margin: 0 0 10px 0;
   }
 
-  #footer > .inner .copyright {
-    margin-top: 0em;
+  #footer>.inner .copyright {
+    margin-top: 1em;
+  }
+
+  td {
+    vertical-align: middle;
+  }
+
+  th {
+    z-index: 1;
   }
 </style>
 <!-- Google tag (gtag.js) -->
@@ -59,97 +58,114 @@
             <h1 class="lang" key="L5E" style="text-align:center"></h1>
             <p class="lang" key="L5EHint"></p>
           </header>
-          <!-- RB UB UL UR RL -->
-          <div class="left">
-            <p>
-              <strong>RB &rArr;</strong>
-              <select style="width:3em" id="pyinput1" onchange="algSearch()">
-                <option></option>
-                <option>UR</option>
-                <option>UL</option>
-                <option>UB</option>
-                <option>RU</option>
-                <option>RL</option>
-                <option>RB</option>
-                <option>LU</option>
-                <option>LR</option>
-                <option>BU</option>
-                <option>BR</option>
-              </select>
-            </p>
-            <p>
-              <strong>UB &rArr;</strong>
-              <select style="width:3em" id="pyinput2" onchange="algSearch()">
-                <option></option>
-                <option>UR</option>
-                <option>UL</option>
-                <option>UB</option>
-                <option>RU</option>
-                <option>RL</option>
-                <option>RB</option>
-                <option>LU</option>
-                <option>LR</option>
-                <option>BU</option>
-                <option>BR</option>
-              </select>
-            </p>
-            <p>
-              <strong>UL &rArr;</strong>
-              <select style="width:3em" id="pyinput3" onchange="algSearch()">
-                <option></option>
-                <option>UR</option>
-                <option>UL</option>
-                <option>UB</option>
-                <option>RU</option>
-                <option>RL</option>
-                <option>RB</option>
-                <option>LU</option>
-                <option>LR</option>
-                <option>BU</option>
-                <option>BR</option>
-              </select>
-            </p>
-            <p>
-              <strong>UR &rArr;</strong>
-              <select style="width:3em" id="pyinput4" onchange="algSearch()">
-                <option></option>
-                <option>UR</option>
-                <option>UL</option>
-                <option>UB</option>
-                <option>RU</option>
-                <option>RL</option>
-                <option>RB</option>
-                <option>LU</option>
-                <option>LR</option>
-                <option>BU</option>
-                <option>BR</option>
-              </select>
-            </p>
-            <p>
-              <strong>RL &rArr;</strong>
-              <select style="width:3em" id="pyinput5" onchange="algSearch()">
-                <option></option>
-                <option>UR</option>
-                <option>UL</option>
-                <option>UB</option>
-                <option>RU</option>
-                <option>RL</option>
-                <option>RB</option>
-                <option>LU</option>
-                <option>LR</option>
-                <option>BU</option>
-                <option>BR</option>
-              </select>
-            </p>
-          </div>
-          <div class="right">
-            <twisty-player id="tw" style="width: 220px; height: 240px;" puzzle="pyraminx" alg=""
-              experimental-setup-anchor="end" hint-facelets="none" control-panel="none" back-view="none"
-              background="none" camera-latitude="25" camera-longitude="45"></twisty-player>
-          </div>
+          <!-- LB RB UB UL UR RL -->
+          <p>
+            <strong>LB &rArr;</strong>
+            <select style="width:3em" id="pyinput1" onchange="algSearch()">
+              <option></option>
+              <option>UR</option>
+              <option>UL</option>
+              <option>UB</option>
+              <option>RU</option>
+              <option>RL</option>
+              <option>RB</option>
+              <option>LU</option>
+              <option>LR</option>
+              <option selected>LB</option>
+              <option>BU</option>
+              <option>BR</option>
+              <option>BL</option>
+            </select>
+            &nbsp;&nbsp;
+            <strong>RB &rArr;</strong>
+            <select style="width:3em" id="pyinput2" onchange="algSearch()">
+              <option></option>
+              <option>UR</option>
+              <option>UL</option>
+              <option>UB</option>
+              <option>RU</option>
+              <option>RL</option>
+              <option selected>RB</option>
+              <option>LU</option>
+              <option>LR</option>
+              <option>LB</option>
+              <option>BU</option>
+              <option>BR</option>
+              <option>BL</option>
+            </select>
+          </p>
+          <p>
+            <strong>UB &rArr;</strong>
+            <select style="width:3em" id="pyinput3" onchange="algSearch()">
+              <option></option>
+              <option>UR</option>
+              <option>UL</option>
+              <option selected>UB</option>
+              <option>RU</option>
+              <option>RL</option>
+              <option>RB</option>
+              <option>LU</option>
+              <option>LR</option>
+              <option>LB</option>
+              <option>BU</option>
+              <option>BR</option>
+              <option>BL</option>
+            </select>
+            &nbsp;&nbsp;
+            <strong>UL &rArr;</strong>
+            <select style="width:3em" id="pyinput4" onchange="algSearch()">
+              <option></option>
+              <option>UR</option>
+              <option>UL</option>
+              <option>UB</option>
+              <option>RU</option>
+              <option>RL</option>
+              <option>RB</option>
+              <option>LU</option>
+              <option>LR</option>
+              <option>LB</option>
+              <option>BU</option>
+              <option>BR</option>
+              <option>BL</option>
+            </select>
+          </p>
+          <p>
+            <strong>UR &rArr;</strong>
+            <select style="width:3em" id="pyinput5" onchange="algSearch()">
+              <option></option>
+              <option>UR</option>
+              <option>UL</option>
+              <option>UB</option>
+              <option>RU</option>
+              <option>RL</option>
+              <option>RB</option>
+              <option>LU</option>
+              <option>LR</option>
+              <option>LB</option>
+              <option>BU</option>
+              <option>BR</option>
+              <option>BL</option>
+            </select>
+            &nbsp;&nbsp;
+            <strong>RL &rArr;</strong>
+            <select style="width:3em" id="pyinput6" onchange="algSearch()">
+              <option></option>
+              <option>UR</option>
+              <option>UL</option>
+              <option>UB</option>
+              <option>RU</option>
+              <option>RL</option>
+              <option>RB</option>
+              <option>LU</option>
+              <option>LR</option>
+              <option>LB</option>
+              <option>BU</option>
+              <option>BR</option>
+              <option>BL</option>
+            </select>
+          </p>
           <div id="div1">
           </div>
-          <br />
         </div>
       </div>
       <footer id="footer">
@@ -169,10 +185,9 @@
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/fingerpy.js"></script>
-  <script src="assets/js/commutator.js"></script>
   <script src="assets/js/setcode.js"></script>
   <script src="assets/js/language.js"></script>
-  <script src="assets/js/L5E.js"></script>
+  <script src="assets/js/L6E.js"></script>
 </body>
 
 </html>
