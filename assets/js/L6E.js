@@ -15,7 +15,6 @@ function algSearch() {
         }
         idValue = idValue + temp;
     }
-    console.log(idValue);
     const div1 = document.getElementById("div1");
     let cnt = 0;
     let tab = `<table id="table"><thead><tr><th>${arrLang[lang]["no"]}</th><th>${arrLang[lang]["image"]}</th><th>${arrLang[lang]["algorithm"]}</th><th>${arrLang[lang]["rightThumbPosition"]}</th><th>${arrLang[lang]["leftThumbPosition"]}</th></tr></thead><tbody>`;
