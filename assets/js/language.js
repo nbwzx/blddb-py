@@ -1,7 +1,7 @@
 const arrLang = {
     "en": {
-        "L5E": "Last 6 Edges (L6E)",
-        "L5EHint": "Enter the position that these edges need to go to.",
+        "L6E": "Last 6 Edges (L6E)",
+        "L6EHint": "Enter the position that these edges need to go to.",
         "thumbup": "Thumb up",
         "thumbdown": "Thumb down",
         "homegrip": "Home grip",
@@ -13,8 +13,8 @@ const arrLang = {
         "leftThumbPosition": "Left Thumb Position"
     },
     "zh": {
-        "L5E": "六棱 (L6E)",
-        "L5EHint": "请选择这些位置上的棱块要去哪里。",
+        "L6E": "六棱 (L6E)",
+        "L6EHint": "请选择这些位置上的棱块要去哪里。",
         "thumbup": "上",
         "thumbdown": "下",
         "homegrip": "中",
